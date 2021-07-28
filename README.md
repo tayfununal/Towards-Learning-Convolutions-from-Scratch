@@ -4,11 +4,17 @@ This readme file is an outcome of the [CENG501 (Spring 2021)](http://kovan.ceng.
 
 # 1. Introduction
 
-Introduce the paper (inc. where it is published) and describe your goal (reproducibility).
+In this paper, they investigated minimum description length as a guiding principle and show that in some settings, it can indeed be indicative of the performance of architectures. To find architectures with small description length, they proposed B-lasso, a simple variant of lasso algorithm that, when applied on fully-connected networks for image classification tasks, learns architectures with local connections and achieves state-of-the-art accuracies for training fully-connected nets on CIFAR-10 (85.19%), CIFAR-100 (59.56%) and SVHN (94.07%) bridging the gap between fully-connected and convolutional nets.
 
 ## 1.1. Paper summary
 
-Summarize the paper, the method & its contributions in relation with the existing literature.
+They introduced shallow (s-conv) and deep (d-conv) all-convolutional networks with desirable properties for studying convolutions. Through systematic experiments on s-conv and d-conv and their locally connected and fully-connected counterparts, they made several observations about the role of depth, local connectivity and weight sharing.
+
+They looked at Minimum Description Length (MDL) as a guiding principle to what architectures generalize better.
+
+Inspired by MDL, they proposed a training algorithm B-lasso , a variant of lasso with a more aggressive soft-thresholding to find architectures with few parameters and hence, a small description length. 
+
+Summarize the paper, the method & its contributions in relation with the existing literature. 
 
 # 2. The method and my interpretation
 
